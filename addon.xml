@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.addon.id" name="Your Add-on" version="1.2.3" provider-name="You">
+<addons>
+
+<addon id="content.game.internet.archive" name="Maicol's Add-ons" version="1.0.0" provider-name="suriaca">
   <requires>
-    <import addon="xbmc.python" version="2.25.0" />
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.xbmcswift2" version="2.4.0"/>
   </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
+  <extension point="kodi.content.game" library="addon.py"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Your add-on's summary</summary>
-    <description lang="en_GB">Your add-on's description</description>
-    <disclaimer lang="en_GB"></disclaimer>
-    <language>en</language> <!-- language of the content the add-on provides, omit if the add-on does not provide any content -->
+    <summary>Tutto quello che serve</summary>
+    <description>Non serve descrivere</description>
     <platform>all</platform>
-    <license>GPL-2.0-or-later</license>
-    <website>http://myplugin.com</website> <!-- URL of the website that supplies the content, or the website for your plugin; may be omitted. -->
-    <source>https://github.com/nichelino73/nichelino</source>
-    <news>v1.2.3 (01/02/2013)
-      [new] some new feature
-      [fix] some fix
-    </news>
-    <assets>
-        <icon>resources/icon.png</icon>
-        <fanart>resources/fanart.jpg</fanart>
-        <banner></banner> <!-- optional -->
-        <clearlogo>resources/clearlogo.png</clearlogo> <!-- optional -->
-        <screenshot></screenshot> <!-- optional, max. 10 -->
-    </assets>
   </extension>
 </addon>
+
+<addon id="nichelino73" name="Maicol's Add-ons" version="1.0.0" provider-name="suriaca">
+    <extension point="xbmc.addon.repository" name="Maicol's Add-ons">
+        <info compressed="true">https://raw.githubusercontent.com/nichelino73/nichelino/main/addon.xml</info>
+        <datadir zip="true">https://raw.githubusercontent.com/nichelino73/nichelino/main/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Zach Morris Add-ons</summary>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+</addons>
