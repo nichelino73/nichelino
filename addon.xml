@@ -16,7 +16,7 @@
 
 <addon id="nichelino73" name="Maicol's Add-ons" version="1.0.0" provider-name="suriaca">
     <extension point="xbmc.addon.repository" name="Maicol's Add-ons">
-        <info compressed="true">https://raw.githubusercontent.com/nichelino73/nichelino/main/addon.xml</info>
+        <info compressed="true">https://raw.githubusercontent.com/nichelino73/nichelino/main/addons.xml</info>
         <datadir zip="true">https://raw.githubusercontent.com/nichelino73/nichelino/main/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
